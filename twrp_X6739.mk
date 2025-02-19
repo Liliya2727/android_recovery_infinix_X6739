@@ -15,6 +15,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
+# Configure launch_with_vendor_ramdisk.mk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
+
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
@@ -24,12 +27,7 @@ $(call inherit-product, device/infinix/X6739/device.mk)
 PRODUCT_DEVICE := X6739
 PRODUCT_NAME := twrp_X6739
 PRODUCT_BRAND := Infinix
-PRODUCT_MODEL := INFINIX GT 10 PRO 5G
-PRODUCT_MANUFACTURER := infinix
+PRODUCT_MODEL := Infinix X6739
+PRODUCT_MANUFACTURER := INFINIX
 
-PRODUCT_GMS_CLIENTID_BASE := android-infinix
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="vnd_x6739_h931-user 12 SP1A.210812.016 582712 release-keys"
-
-BUILD_FINGERPRINT := Infinix/X6739-GL/Infinix-X6739:12/SP1A.210812.016/240412V2093:user/release-keys
+PRODUCT_GMS_CLIENTID_BASE := android-transsion
