@@ -19,13 +19,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
 # Inherit some common TWRP stuff.
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Inherit from Infinix-X6739 device
 $(call inherit-product, device/infinix/X6739/device.mk)
 
 PRODUCT_DEVICE := X6739
-PRODUCT_NAME := twrp_X6739
+PRODUCT_NAME := pb_X6739
 PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Infinix X6739
 PRODUCT_MANUFACTURER := INFINIX
