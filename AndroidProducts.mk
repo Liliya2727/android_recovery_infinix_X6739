@@ -6,4 +6,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pbrp_X6739.mk
+    $(LOCAL_DIR)/twrp_X6739.mk
